@@ -1,0 +1,8 @@
+Server:
+  port: 8088
+
+
+
+chatbot-api:
+  curl: https://api.openai.com/v1/chat/completions
+  chatGPT-Key: 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
