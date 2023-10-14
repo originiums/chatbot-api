@@ -17,10 +17,12 @@ import org.example.chatbot.api.domain.chatgpt.IOpenAI;
 import org.example.chatbot.api.domain.chatgpt.model.aggregates.Aians;
 import org.example.chatbot.api.domain.chatgpt.model.vo.Choices;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
 
+@Service
 public class OpenAI implements IOpenAI {
 
     private Logger logger = LoggerFactory.getLogger(OpenAI.class);
@@ -66,6 +68,7 @@ public class OpenAI implements IOpenAI {
             for (Choices choices1 : choices){
                 stringBuilder.append(choices1.getMessage().getContent());
             }
+            //System.out.println(stringBuilder.toString());
             return stringBuilder.toString();
         } else {
             throw new RuntimeException("api.openai.com Err Code is " + response.getStatusLine().getStatusCode());

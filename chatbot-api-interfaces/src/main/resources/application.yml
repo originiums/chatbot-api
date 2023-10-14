@@ -5,4 +5,4 @@ Server:
 
 chatbot-api:
   curl: https://api.openai.com/v1/chat/completions
-  chatGPT-Key: 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
+  chatGPT-Key: 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

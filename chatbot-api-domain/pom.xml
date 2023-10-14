@@ -88,11 +88,11 @@
             <artifactId>chatbot-api-domain</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.example</groupId>
             <artifactId>chatbot-api-application</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>

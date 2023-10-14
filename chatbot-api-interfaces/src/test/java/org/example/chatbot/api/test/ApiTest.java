@@ -29,7 +29,7 @@ public class ApiTest {
 
         HttpPost post = new HttpPost("https://api.openai.com/v1/chat/completions");
         post.addHeader("Content-Type", "application/json");
-        post.addHeader("Authorization", "Bearer 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");
+        post.addHeader("Authorization", "Bearer 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");
         post.setConfig(build);
 
         String paramJson = "{\n" +
